@@ -246,7 +246,7 @@
                                 {
                                     label: 'High WPM',
                                     id: 'checkbox2',
-                                    customJS: 'null'
+                                    customJS: ''
                                 },
                                 {
                                     label: 'Auto awnser',
@@ -313,7 +313,8 @@
                                     id: 'checkboxW',
                                     customJS: 'null'
                                 }
-                            ]
+                            ],
+                            section5: [] //chat gpt section
 
 
                         
@@ -356,6 +357,7 @@
                             return button;
                         };
 
+
                         // Create sidebar buttons
                         const createSidebarButton = (label, targetSection) => {
                             const button = createElement('button', {
@@ -366,7 +368,7 @@
                                 border: 'none',
                                 borderRadius: '8px',
                                 cursor: 'pointer',
-                                textAlign: 'center'
+                                textAlign: 'left'
                             }, label);
 
                             button.addEventListener('click', () => showSection(targetSection));
@@ -376,7 +378,9 @@
                         // Create checkbox elements
                         const createCheckbox = ({ label, id }) => {
                             const container = createElement('div', {
-                                marginBottom: '10px'
+                                marginBottom: '10px',
+                                width: '100%',
+                                textAlign: 'left'
                             });
 
                             const checkbox = createElement('input', {
@@ -385,7 +389,9 @@
                             checkbox.type = 'checkbox';
                             checkbox.id = id;
 
-                            const checkboxLabel = createElement('label', {}, label);
+                            const checkboxLabel = createElement('label', {
+                                textAlign: 'left'
+                            }, label);
                             checkboxLabel.setAttribute('for', id);
 
                             container.appendChild(checkbox);
@@ -395,7 +401,9 @@
 
                         // Create custom JS section
                         const createCustomJSSection = () => {
-                            const container = createElement('div');
+                            const container = createElement('div', {
+                                width: '100%'
+                            });
 
                             const textarea = createElement('textarea', {
                                 width: '100%',
@@ -403,7 +411,8 @@
                                 backgroundColor: '#212121',
                                 color: '#fff',
                                 border: '1px solid #555',
-                                padding: '10px'
+                                padding: '10px',
+                                textAlign: 'left'
                             });
                             textarea.placeholder = 'Enter your custom JavaScript here...';
 
@@ -451,6 +460,10 @@
 
                             return container;
                         };
+                        
+                        //chatGpt section aka ABSOUTE FUCKING HELL
+
+
 
                         // Show section function
                         const showSection = (sectionKey) => {
@@ -472,7 +485,8 @@
                                 'section1': '📕       Reading Plus',
                                 'section2': '🔢       STmath hacks',
                                 'section3': '💉Custom JS injecting',
-                                'section4': '⚙️           settings'
+                                'section4': '⚙️           settings',
+                                'section5': '🤖           chat gpt'
                             }[key];
                             sidebar.appendChild(createSidebarButton(sectionName, key));
                         });
@@ -485,7 +499,7 @@
                                 alignItems: 'vertically',
                                 marginBottom: '30px'
                             });
-                            logoContainer.href = 'https://github.com/SAPH1TE/1017274812/';
+                            logoContainer.href = 'https://github.com/yetanotheryouisyellow/ReadingPlusExploit';
                             logoContainer.target = '_blank';
 
                             const logoImage = createElement('img', {
@@ -519,7 +533,8 @@
                             padding: '10px',
                             maxHeight: '30px',
                             overflowY: 'auto',
-                            fontFamily: 'NSimSun, "Microsoft YaHei", "SimSun", sans-serif'  // Fallback fonts
+                            fontFamily: 'NSimSun, "Microsoft YaHei", "SimSun", sans-serif',
+                            textAlign: 'left'  // Add this line
                         });
                         debugLog.textContent = 'Debug log:\n';
                         windowContainer.appendChild(debugLog);
