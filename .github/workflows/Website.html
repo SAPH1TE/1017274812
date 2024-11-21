@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School Cheat Menu Suite</title>
+    <style>
+        :root {
+            --primary: #2c2c2c;
+            --secondary: #171717;
+            --accent: #4caf50;
+            --text: #ffffff;
+            --code-bg: #1a1a1a;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background-color: var(--secondary);
+            color: var(--text);
+            line-height: 1.6;
+        }
+
+        .navbar {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background-color: var(--primary);
+            padding: 1rem;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+        }
+
+        .navbar-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: var(--accent);
+        }
+
+        .nav-links a {
+            color: var(--text);
+            text-decoration: none;
+            margin-left: 2rem;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: var(--accent);
+        }
+
+        .hero {
+            padding: 8rem 2rem 4rem;
+            background-color: var(--primary);
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 800px;
+            margin: 0 auto;
+            opacity: 0.8;
+        }
+
+        .content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 4rem 2rem;
+        }
+
+        .section {
+            margin-bottom: 4rem;
+        }
+
+        .section h2 {
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+            color: var(--accent);
+        }
+
+        .code-block {
+            background-color: var(--code-bg);
+            padding: 1.5rem;
+            border-radius: 8px;
+            overflow-x: auto;
+            margin: 1rem 0;
+        }
+
+        pre {
+            font-family: 'Fira Code', monospace;
+            font-size: 0.9rem;
+        }
+
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .feature-card {
+            background-color: var(--primary);
+            padding: 2rem;
+            border-radius: 8px;
+            transition: transform 0.3s;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .feature-card h3 {
+            color: var(--accent);
+            margin-bottom: 1rem;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 0.8rem 1.5rem;
+            background-color: var(--accent);
+            color: var(--text);
+            text-decoration: none;
+            border-radius: 4px;
+            transition: background-color 0.3s;
+        }
+
+        .button:hover {
+            background-color: #45a049;
+        }
+
+        .contribution-steps {
+            list-style: none;
+        }
+
+        .contribution-steps li {
+            margin-bottom: 1rem;
+            padding-left: 2rem;
+            position: relative;
+        }
+
+        .contribution-steps li::before {
+            content: "→";
+            position: absolute;
+            left: 0;
+            color: var(--accent);
+        }
+
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            .content {
+                padding: 2rem 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-content">
+            <div class="logo">RPExploit</div>
+            <div class="nav-links">
+                <a href="#features">Features</a>
+                <a href="#installation">Installation</a>
+                <a href="#advanced">Advanced</a>
+                <a href="#contribute">Contribute</a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <h1>Reading Plus Exploit</h1>
+        <p>A powerful and customizable script for enhancing your Reading Plus experience</p>
+    </section>
+
+    <main class="content">
+        <section id="features" class="section">
+            <h2>Key Features</h2>
+            <div class="feature-grid">
+                <div class="feature-card">
+                    <h3>Reading Plus</h3>
+                    <p>There are various Reading plus hacks that come with the menu to!</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Custom JS Injection</h3>
+                    <p>Inject custom JavaScript code to do **anything**</p>
+                </div>
+                <div class="feature-card">
+                    <h3>STMath Integration</h3>
+                    <p>Built-in Cheats for STmath</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Debugging Tools</h3>
+                    <p>Integrated debugging console for troubleshooting and development. Or bug reporting</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="installation" class="section">
+            <h2>Installation Guide</h2>
+            <div class="code-block">
+                <pre>
+Requirements:
+
+    Internet Access
+    Firefox Browser (or any web browser that supports bookmarklets)
+    Signed into the necessary account in your browser (e.g., Reading Plus, Clever, or similar platforms)
+
+Step 1: Download the Required File
+
+    Open your web browser and navigate to my GitHub page: https://github.com/SAPH1TE/1017274812.
+    On the right-hand side of the page, locate the Releases section.
+    Find and download the file named "loader.txt", which is positioned directly below the large paragraph I’ve written.
+        To download the file, simply click on the blue name of the file.
+
+Step 2: Open the File in Notepad
+
+    After downloading the file, press the Windows key, type Notepad in the search bar, and open the Notepad application.
+    In Notepad, go to the File menu (top-left corner) and select Open.
+    Navigate to your Downloads folder and open the "loader.txt" file.
+    Do not modify the contents of the file. It should look something like this: "javascript:'use%20strict'%3" and so on.
+    Leave Notepad open for the next steps.
+
+Step 3: Create a Bookmark in Your Browser
+
+    In your browser (e.g., Firefox, Chrome, Safari), create a new bookmark.
+    In the URL field of the bookmark, paste the contents from the loader.txt file that is currently open in Notepad.
+    After pasting, save the bookmark and close Notepad.
+
+Step 4: Use the Bookmarklet
+
+    Open the website or platform where you want to use the bookmarklet (e.g., Clever, Reading Plus, or any other supported platform).
+    Once on the desired page, click on the bookmark you created. This will execute the bookmarklet and provide the functionality it offers.
+            </div>
+        </section>
+
+        <section id="advanced" class="section">
+            <h2>Advanced Usage</h2>
+            <h3>Custom JavaScript Integration</h3>
+            <p>The script provides a powerful custom JS injection system. Here's how to use it:</p>
+            <div class="code-block">
+                <pre>
+// Example: Create a custom automation
+const customAutomation = () => {
+    // Your custom logic here
+    console.log("Custom automation running");
+};
+
+// Add it to the sections object
+sections.section3.push({
+    label: 'Custom Automation',
+    id: 'customAuto',
+    customJS: customAutomation.toString()
+});</pre>
+            </div>
+        </section>
+
+        <section id="contribute" class="section">
+            <h2>How to Contribute</h2>
+            <ul class="contribution-steps">
+                <li>Fork the repository on GitHub</li>
+                <li>Create a new branch for your feature</li>
+                <li>Implement your changes with clear documentation</li>
+                <li>Submit a pull request with a detailed description</li>
+                <li>Engage in code review and discussion</li>
+            </ul>
+            <div style="margin-top: 2rem;">
+                <a href="https://github.com/SAPH1TE/1017274812" class="button">View on GitHub</a>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
