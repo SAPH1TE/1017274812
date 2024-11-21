@@ -12,7 +12,7 @@ This project is a bookmarklet cheat menu created to provide hacks for various sc
 
 The project is built on JavaScript and is frequently updated with new hacks, fixes, and optimizations. The code powering the cheat menu can be found in the **`loader.txt`** file within the releases tab. While this project is meant to be fun, it also serves as a way to demonstrate how web pages can be modified with client-side JavaScript.
 
-> **Disclaimer:** This project is intended for educational and entertainment purposes only. The only rule of this repo is **do not skid or reproduce the content as your own** without a disclaimer. Simply provide the original source (either the repo link or project name) for credit.
+> **Disclaimer:** This project is intended for educational and entertainment purposes only. (sorta:P) The only rule of this repo is **do not skid or reproduce the content as your own** without a disclaimer. Simply provide the original source (either the repo link or project name) for credit.
 
 ## Features
 
