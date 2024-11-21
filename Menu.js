@@ -485,7 +485,7 @@
                                 alignItems: 'vertically',
                                 marginBottom: '30px'
                             });
-                            logoContainer.href = 'https://github.com/yetanotheryouisyellow/ReadingPlusExploit';
+                            logoContainer.href = 'https://github.com/SAPH1TE/1017274812/';
                             logoContainer.target = '_blank';
 
                             const logoImage = createElement('img', {
